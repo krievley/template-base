@@ -10,6 +10,11 @@ module.exports = {
             lightAccent: '#8E9BB3',
             dark: '#272829',
             darkAccent: '#226DEC',
+            primary: '#5F6FA3',
+            info: '#272829',
+            success: '#529c69',
+            warning: '#cf8c31',
+            danger: '#f44336',
         }
     },
   },

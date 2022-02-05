@@ -20,16 +20,16 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="container mx-auto">
+<body>
 <!-- NAVIGATION START -->
 <nav x-data="{ openNav: false, toggleNav() { this.openNav = ! this.openNav } }"
-     class="relative w-full py-4 px-20 mb-6 text-dark border-b-2 border-light">
+     class="relative w-full py-4 px-20 mb-6 bg-brand text-dark border-b-2 border-light">
     <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
-        <a class="text-xl text-black" href="#">
+        <a class="text-xl text-light" href="#">
             Navbar
         </a>
         <button x-on:click="toggleNav()"
-                class="md:hidden navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                class="md:hidden navbar-toggler text-light border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
                 type="button">
             <svg focusable="false" data-prefix="fas" data-icon="bars"
                  class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -40,19 +40,19 @@
         </button>
 
         <div :class="openNav ? '' : 'hidden md:inline'" class="w-screen md:w-auto">
-            <ul class="navbar-nav flex flex-col place-items-end md:flex-row md:space-x-8 pl-0 list-style-none mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-dark hover:text-lightAccent focus:text-lightAccent" href="#">
+            <ul class="navbar-nav flex flex-col place-items-end md:flex-row md:space-x-4 pl-0 list-style-none mr-auto">
+                <li class="nav-item p-3 backdrop-brightness-110">
+                    <a class="nav-link text-light backdrop-opacity-5" href="#">
                         Home
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark hover:text-lightAccent focus:text-lightAccent" href="#">
+                <li class="nav-item p-3">
+                    <a class="nav-link text-light" href="#">
                         Features
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark hover:text-lightAccent focus:text-lightAccent" href="#">
+                <li class="nav-item p-3">
+                    <a class="nav-link text-light" href="#">
                         Pricing
                     </a>
                 </li>
@@ -62,19 +62,151 @@
 </nav>
 <!-- NAVIGATION END -->
 
-<!-- HERO START -->
-<div class="bg-light shadow-lg rounded-lg flex place-content-center px-36 py-28">
-    <div class="flex-col text-center">
-        <h5 class="uppercase font-semibold text-brand py-2">Hello World</h5>
-        <h1 class="text-5xl font-bold">Template Name</h1>
-        <p class="text-lg text-slate-400 py-3">
-            Quick description of the template.
-            <br/>
-            What it seeks to mimic and how to get it.
-        </p>
+<div class="container mx-auto">
+
+    <!-- HERO START -->
+    <div class="bg-light shadow-lg rounded-lg flex place-content-center px-36 py-28">
+        <div class="flex-col text-center">
+            <h5 class="uppercase font-semibold text-brand py-2">Hello World</h5>
+            <h1 class="text-5xl font-bold text-dark">Template Name</h1>
+            <p class="text-lg text-lightAccent py-3">
+                Quick description of the template.
+                <br/>
+                What it seeks to mimic and how to get it.
+            </p>
+        </div>
     </div>
+    <!-- HERO END -->
+
+    <!-- TYPOGRAPHY START -->
+    <div class="my-12">
+        <h2 class="text-5xl text-dark font-semibold py-3 border-b-2 border-dark">
+            Typography
+        </h2>
+        <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+                <h5 class="uppercase font-semibold text-brand py-2">Headings</h5>
+                <h1 class="leading-tight text-6xl text-dark">H1 Heading</h1>
+                <h2 class="leading-tight text-5xl text-dark">H2 Heading</h2>
+                <h3 class="leading-tight text-4xl text-dark">H3 Heading</h3>
+                <h4 class="leading-tight text-3xl text-dark">H4 Heading</h4>
+                <h5 class="leading-tight text-2xl text-dark">H5 Heading</h5>
+                <h6 class="leading-tight text-xl text-dark">H6 Heading</h6>
+            </div>
+            <div>
+                <h5 class="uppercase font-semibold text-brand py-2">Font Weights</h5>
+                <div class="space-y-4">
+                    <p class="text-dark font-black">Black Weight: 900</p>
+                    <p class="text-dark font-extrabold">Extra Bold Weight: 800</p>
+                    <p class="text-dark font-bold">Bold Weight: 700</p>
+                    <p class="text-dark font-semibold">Semibold Weight: 600</p>
+                    <p class="text-dark font-medium">Medium Weight: 500</p>
+                    <p class="text-dark font-normal">Normal Weight: 400</p>
+                    <p class="text-dark font-light">Light Weight: 300</p>
+                    <p class="text-dark font-extralight">Extra Light Weight: 200</p>
+                    <p class="text-dark font-thin">Extra Light Weight: 100</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5 class="uppercase font-semibold text-brand py-2">Blockquote</h5>
+                    <figure>
+                        <blockquote>
+                            <p class="text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            </p>
+                        </blockquote>
+                        <figcaption class="text-sm text-lightAccent">
+                            - Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="mt-3">
+                    <h5 class="uppercase font-semibold text-brand py-2">Paragraph</h5>
+                    <p class="text-base text-dark">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TYPOGRAPHY END -->
+
+    <!-- NAVIGATION START -->
+    <div class="my-12">
+        <h2 class="text-5xl text-dark font-semibold py-3 border-b-2 border-dark">
+            Navigation
+        </h2>
+        <div class="mt-3">
+            <nav x-data="{ demoNav: false, toggleDemoNav() { this.demoNav = ! this.demoNav } }"
+                 class="relative py-4 px-20 mb-6 bg-dark text-light">
+                <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
+                    <a class="text-xl text-light" href="#">
+                        Dark
+                    </a>
+                    <button x-on:click="toggleDemoNav()"
+                            class="md:hidden navbar-toggler text-light border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                            type="button">
+                        <svg focusable="false" data-prefix="fas" data-icon="bars"
+                             class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div :class="demoNav ? '' : 'hidden md:inline'" class="grow w-screen md:w-auto">
+                        <div class="flex flex-col items-center md:flex-row md:space-x-4">
+                            <ul class="grow flex flex-col md:flex-row justify-end md:justify-start pl-0 list-style-none">
+                                <li class="nav-item p-3 backdrop-brightness-110">
+                                    <a class="nav-link text-light backdrop-opacity-5" href="#">
+                                        Link
+                                    </a>
+                                </li>
+                                <li class="nav-item p-3">
+                                    <a class="nav-link text-light" href="#">
+                                        Link
+                                    </a>
+                                </li>
+                                <li class="nav-item p-3">
+                                    <a class="nav-link text-light" href="#">
+                                        Link
+                                    </a>
+                                </li>
+                                <li class="nav-item p-3">
+                                    <a class="nav-link text-light" href="#">
+                                        Link
+                                    </a>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="relative">
+                                    <input type="text"
+                                           name="search"
+                                           class="focus:ring-brand focus:border-brand w-full pl-4 pr-8 py-2 sm:text-sm border-light rounded-md"
+                                           placeholder="Search...">
+                                    <div class="absolute inset-y-0 right-0 flex items-center">
+                                        <button class="text-dark pr-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- NAVIGATION END -->
+
 </div>
-<!-- HERO END -->
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
