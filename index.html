@@ -300,6 +300,131 @@
     </div>
     <!-- BUTTONS END -->
 
+
+    <!-- FORMS START -->
+    <div class="my-12">
+        <h2 class="text-5xl text-dark font-semibold py-3 border-b-2 border-dark">
+            Form
+        </h2>
+        <div class="mt-3">
+            <div class="mt-5 md:mt-0">
+                <form action="#" method="POST">
+                    <div class="overflow-hidden">
+                        <div>
+                            <div class="mb-4">
+                                <h3 class="text-lg font-medium leading-6 text-dark">Personal Information</h3>
+                                <p class="mt-1 text-sm text-dark">Use a permanent address where you can receive mail.</p>
+                            </div>
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium text-dark">First name</label>
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 p-2 focus:ring-brand focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium text-dark">Last name</label>
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="email-address" class="block text-sm font-medium text-dark">Email address</label>
+                                    <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="country" class="block text-sm font-medium text-dark">Country</label>
+                                    <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-dark rounded-md focus:outline-none focus:ring-dark focus:border-dark sm:text-sm">
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                        <option>Mexico</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-span-6">
+                                    <label for="street-address" class="block text-sm font-medium text-dark">Street address</label>
+                                    <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                    <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                    <input type="text" name="city" id="city" autocomplete="address-level2" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
+                                    <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
+                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 p-2 focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <fieldset>
+                                    <legend class="text-base font-medium text-gray-900">By Email</legend>
+                                    <div class="mt-4 space-y-4">
+                                        <div class="flex items-start">
+                                            <div class="flex items-center h-5">
+                                                <input id="comments" name="comments" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
+                                            </div>
+                                            <div class="ml-3 text-sm">
+                                                <label for="comments" class="font-medium text-gray-700">Comments</label>
+                                                <p class="text-lightAccent">Get notified when someones posts a comment on a posting.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <div class="flex items-center h-5">
+                                                <input id="candidates" name="candidates" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
+                                            </div>
+                                            <div class="ml-3 text-sm">
+                                                <label for="candidates" class="font-medium text-gray-700">Candidates</label>
+                                                <p class="text-lightAccent">Get notified when a candidate applies for a job.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <div class="flex items-center h-5">
+                                                <input id="offers" name="offers" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
+                                            </div>
+                                            <div class="ml-3 text-sm">
+                                                <label for="offers" class="font-medium text-gray-700">Offers</label>
+                                                <p class="text-lightAccent">Get notified when a candidate accepts or rejects an offer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="my-4">
+                                <fieldset>
+                                    <div>
+                                        <legend class="text-base font-medium text-gray-900">Push Notifications</legend>
+                                        <p class="text-sm text-lightAccent">These are delivered via SMS to your mobile phone.</p>
+                                    </div>
+                                    <div class="mt-4 space-y-4">
+                                        <div class="flex items-center">
+                                            <input id="push-everything" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
+                                            <label for="push-everything" class="ml-3 block text-sm font-medium text-gray-700"> Everything </label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="push-email" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
+                                            <label for="push-email" class="ml-3 block text-sm font-medium text-gray-700"> Same as email </label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="push-nothing" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
+                                            <label for="push-nothing" class="ml-3 block text-sm font-medium text-gray-700"> No push notifications </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- FORMS END -->
+
+
 </div>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
