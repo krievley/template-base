@@ -1,0 +1,17 @@
+module.exports = {
+  content: [
+    "./*.{html,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+        colors: {
+            brand: '#5F6FA3',
+            light: '#F3F1F2',
+            lightAccent: '#8E9BB3',
+            dark: '#272829',
+            darkAccent: '#226DEC',
+        }
+    },
+  },
+  plugins: [],
+}
