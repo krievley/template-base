@@ -265,6 +265,90 @@
                 </div>
             </nav>
         </div>
+        <div class="mt-3">
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <h5 class="uppercase font-semibold text-brand py-2">Breadcrumbs</h5>
+                    <nav class="rounded-md w-full">
+                        <ol class="list-reset flex">
+                            <li><a href="#" class="text-brand">Home</a></li>
+                            <li><span class="text-dark mx-2">/</span></li>
+                            <li><a href="#" class="text-brand">Link</a></li>
+                            <li><span class="text-dark mx-2">/</span></li>
+                            <li class="text-dark">Link</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div>
+                    <h5 class="uppercase font-semibold text-brand py-2">Pagination</h5>
+                    <div class="flex">
+                        <nav aria-label="Page navigation example">
+                            <ul class="flex list-style-none">
+                                <li class="page-item disabled"><a
+                                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-lightAccent pointer-events-none focus:shadow-none"
+                                    href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                                <li class="page-item"><a
+                                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-dark focus:shadow-none"
+                                    href="#">1</a></li>
+                                <li class="page-item active"><a
+                                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-brand outline-none transition-all duration-300 rounded text-light shadow-md focus:shadow-md"
+                                    href="#">2</a></li>
+                                <li class="page-item"><a
+                                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-dark focus:shadow-none"
+                                    href="#">3</a></li>
+                                <li class="page-item"><a
+                                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-dark focus:shadow-none"
+                                    href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="uppercase font-semibold text-brand py-2">Tabs</h5>
+                    <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#tabs-home"
+                               class="nav-link block font-medium text-xs leading-tight uppercase text-brand border-b-2 border-brand px-6 py-3 my-2"
+                               id="tabs-home-tab"
+                               data-bs-toggle="pill"
+                               data-bs-target="#tabs-home"
+                               role="tab"
+                               aria-controls="tabs-home"
+                               aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#tabs-profile"
+                               class="nav-link block font-medium text-xs leading-tight uppercase px-6 py-3 my-2"
+                               id="tabs-profile-tab"
+                               data-bs-toggle="pill"
+                               data-bs-target="#tabs-profile"
+                               role="tab"
+                               aria-controls="tabs-profile"
+                               aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#tabs-profile"
+                               class="nav-link block font-medium text-xs leading-tight uppercase px-6 py-3 my-2"
+                               data-bs-toggle="pill"
+                               data-bs-target="#tabs-profile"
+                               role="tab"
+                               aria-controls="tabs-profile"
+                               aria-selected="false">Messages</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#tabs-profile"
+                               class="nav-link block font-medium text-xs leading-tight uppercase px-6 py-3 my-2"
+                               data-bs-toggle="pill"
+                               data-bs-target="#tabs-profile"
+                               role="tab"
+                               aria-controls="tabs-profile"
+                               aria-selected="false">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- NAVIGATION END -->
 
@@ -299,7 +383,6 @@
         </div>
     </div>
     <!-- BUTTONS END -->
-
 
     <!-- FORMS START -->
     <div class="my-12">
@@ -423,6 +506,92 @@
         </div>
     </div>
     <!-- FORMS END -->
+
+    <!-- TABLES START -->
+    <div class="my-12">
+        <h2 class="text-5xl text-dark font-semibold py-3 border-b-2 border-dark">
+            Tables
+        </h2>
+        <div class="mt-3">
+            <div class="flex flex-col">
+                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                        <div class="overflow-hidden border border-light sm:rounded-lg">
+                            <table class="min-w-full divide-y divide-light">
+                                <thead class="bg-brand">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Name</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Title</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Status</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Role</th>
+                                </tr>
+                                </thead>
+                                <tbody class="divide-y divide-light">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="ml-4">
+                                                <div class="text-sm text-dark">Jane Cooper</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-dark">Regional Paradigm Technician</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Active</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Admin</td>
+                                </tr>
+                                <tr class="bg-light">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="ml-4">
+                                                <div class="text-sm text-dark">Naomi Coleman</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-dark">Sales Executive</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Active</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Admin</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="ml-4">
+                                                <div class="text-sm text-dark">Brittany Cox</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-dark">Brand Ambassador</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Active</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Admin</td>
+                                </tr>
+                                <tr class="bg-light">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="ml-4">
+                                                <div class="text-sm text-dark">Stacy Armstrong</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-dark">Astronaut</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Active</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-dark">Admin</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TABLES END -->
 
 
 </div>
