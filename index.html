@@ -21,9 +21,9 @@
 </head>
 
 <body>
-<div x-data="{ isDark: false, toggleDark() { this.isDark = ! this.isDark } }">
+<div x-data="{ isDark: true, toggleDark() { this.isDark = ! this.isDark } }">
     <div :class="isDark ? 'dark' : ''">
-        <div class="bg-light text-dark dark:bg-dark dark:text-light text-base">
+        <div class="bg-light text-dark dark:bg-dark dark:text-light text-base tracking-wide">
 
             <!-- NAVIGATION START -->
             <nav x-data="{ openNav: false, toggleNav() { this.openNav = ! this.openNav } }"
@@ -99,14 +99,14 @@
             <div class="container mx-auto">
 
                 <!-- HERO START -->
-                <div class="bg-light dark:bg-dark shadow-lg dark:shadow-light border dark:border-light rounded-lg flex place-content-center px-36 py-28">
+                <div class="bg-light dark:bg-dark border dark:border-darkAccent rounded-lg flex place-content-center px-36 py-28">
                     <div class="flex-col text-center">
-                        <h5 class="uppercase font-semibold text-brand py-2">Hello World</h5>
-                        <h1 class="text-5xl font-bold text-dark dark:text-light">Template Name</h1>
+                        <h5 class="uppercase font-semibold text-brand py-2">Tailwind CSS Template</h5>
+                        <h1 class="text-5xl font-bold text-dark dark:text-light">Terminal Theme</h1>
                         <p class="text-lg text-lightAccent dark:text-darkAccent py-3">
-                            Quick description of the template.
+                            This theme provides styling to mimic a terminal.
                             <br/>
-                            What it seeks to mimic and how to get it.
+                            The default of this theme is 'dark' but a light theme is available.
                         </p>
                     </div>
                 </div>
@@ -463,8 +463,15 @@
                                         </div>
                                         <div class="grid grid-cols-6 gap-6">
                                             <div class="col-span-6 sm:col-span-3">
-                                                <label for="first-name" class="block text-sm font-medium text-dark dark:text-light">First name</label>
-                                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 p-2 text-dark focus:ring-brand focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="first-name" class="mr-2 block text-base font-medium text-dark dark:text-light">First name:</label>
+                                                    <input type="text"
+                                                           name="first-name"
+                                                           id="first-name"
+                                                           autocomplete="given-name"
+                                                           style="caret-shape:block"
+                                                           class="grow caret-block text-dark dark:text-light dark:bg-dark focus:ring-0 focus:border-dark sm:text-sm border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3">
