@@ -23,7 +23,7 @@
 <body>
 <div x-data="{ isDark: false, toggleDark() { this.isDark = ! this.isDark } }">
     <div :class="isDark ? 'dark' : ''">
-        <div class="bg-light text-dark dark:bg-dark dark:text-light">
+        <div class="bg-light text-dark dark:bg-dark dark:text-light text-base">
 
             <!-- NAVIGATION START -->
             <nav x-data="{ openNav: false, toggleNav() { this.openNav = ! this.openNav } }"
