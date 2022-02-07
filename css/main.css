@@ -17,9 +17,3 @@
     @apply ring-0;
     @apply outline-0;
 }
-
-.caret-block {
-    background-color: hsla(1, 1%, 100%, 1);
-    color: #000;
-    animation: blink 1s step-end infinite;
-}

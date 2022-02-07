@@ -27,13 +27,13 @@
 
             <!-- NAVIGATION START -->
             <nav x-data="{ openNav: false, toggleNav() { this.openNav = ! this.openNav } }"
-                 class="relative w-full py-4 px-20 mb-6 bg-brand text-dark dark:text-light">
+                 class="relative w-full py-4 px-20 mb-6 border-b border-brand text-brand">
                 <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
-                    <a class="text-xl text-light dark:text-dark" href="#">
+                    <a class="text-xl" href="#">
                         Navbar
                     </a>
                     <button x-on:click="toggleNav()"
-                            class="md:hidden navbar-toggler text-light dark:text-dark border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                            class="md:hidden navbar-toggler border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
                             type="button">
                         <svg focusable="false" data-prefix="fas" data-icon="bars"
                              class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -44,44 +44,44 @@
                     </button>
 
                     <div :class="openNav ? '' : 'hidden md:inline'" class="w-screen md:w-auto">
-                        <ul class="navbar-nav flex flex-col place-items-end md:flex-row md:space-x-4 pl-0 list-style-none mr-auto">
-                            <li class="nav-item p-3 backdrop-brightness-110">
-                                <a class="nav-link text-light dark:text-dark backdrop-opacity-5" href="#">
+                        <ul class="navbar-nav flex flex-col items-center md:flex-row md:space-x-4 pl-0 list-style-none mr-auto">
+                            <li class="nav-item p-3">
+                                <a class="nav-link text-brand backdrop-opacity-5" href="#">
                                     Home
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#typography">
+                                <a class="nav-link text-brand" href="#typography">
                                     Typography
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#navigation">
+                                <a class="nav-link text-brand" href="#navigation">
                                     Navigation
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#buttons">
+                                <a class="nav-link text-brand" href="#buttons">
                                     Buttons
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#form">
+                                <a class="nav-link text-brand" href="#form">
                                     Form
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#tables">
+                                <a class="nav-link text-brand" href="#tables">
                                     Tables
                                 </a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link text-light dark:text-dark" href="#cards">
+                                <a class="nav-link text-brand" href="#cards">
                                     Cards
                                 </a>
                             </li>
-                            <li class="nav-item p-3 border-l border-light dark:border-dark">
-                                <button class="text-light dark:text-dark flex place-items-center" x-on:click="toggleDark">
+                            <li class="nav-item p-3 md:border-l md:border-brand">
+                                <button class="text-brand flex place-items-center" x-on:click="toggleDark">
                                     <svg x-show="isDark" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                                     </svg>
@@ -114,28 +114,28 @@
 
                 <!-- ALERT START -->
                 <div class="py-12">
-                    <div class="bg-primary/30 backdrop-opacity-50 rounded-lg py-5 px-6 mb-4 text-base text-primary mb-3" role="alert">
+                    <div class="border border-primary rounded-lg py-5 px-6 mb-4 text-base text-primary mb-3" role="alert">
                         A simple primary alert - check it out!
                     </div>
-                    <div class="bg-success/30 rounded-lg py-5 px-6 mb-4 text-base text-success mb-3" role="alert">
+                    <div class="border border-success rounded-lg py-5 px-6 mb-4 text-base text-success mb-3" role="alert">
                         A simple success alert - check it out!
                     </div>
-                    <div class="bg-danger/30 rounded-lg py-5 px-6 mb-4 text-base text-danger mb-3" role="alert">
+                    <div class="border border-danger rounded-lg py-5 px-6 mb-4 text-base text-danger mb-3" role="alert">
                         A simple danger alert - check it out!
                     </div>
-                    <div class="bg-warning/30 rounded-lg py-5 px-6 mb-4 text-base text-warning mb-3" role="alert">
+                    <div class="border border-warning rounded-lg py-5 px-6 mb-4 text-base text-warning mb-3" role="alert">
                         A simple warning alert - check it out!
                     </div>
-                    <div class="bg-info/30 rounded-lg py-5 px-6 mb-4 text-base text-info mb-3" role="alert">
+                    <div class="border border-info rounded-lg py-5 px-6 mb-4 text-base text-info mb-3" role="alert">
                         A simple info alert - check it out!
                     </div>
-                    <div class="bg-brand/30 rounded-lg py-5 px-6 mb-4 text-base text-brand mb-3" role="alert">
+                    <div class="border border-brand rounded-lg py-5 px-6 mb-4 text-base text-brand mb-3" role="alert">
                         A simple brand alert - check it out!
                     </div>
-                    <div class="bg-lightAccent/30 dark:bg-light/30 rounded-lg py-5 px-6 mb-4 text-base text-lightAccent dark:text-light mb-3" role="alert">
+                    <div class="border border-lightAccent dark:border-light rounded-lg py-5 px-6 mb-4 text-base text-lightAccent dark:text-light mb-3" role="alert">
                         A simple light alert - check it out!
                     </div>
-                    <div class="bg-dark/30 dark:bg-darkAccent/30 rounded-lg py-5 px-6 mb-4 text-base text-dark dark:text-darkAccent mb-3" role="alert">
+                    <div class="border border-dark dark:border-darkAccent rounded-lg py-5 px-6 mb-4 text-base text-dark dark:text-darkAccent mb-3" role="alert">
                         A simple dark alert - check it out!
                     </div>
                 </div>
@@ -206,13 +206,13 @@
                     </h2>
                     <div class="mt-3">
                         <nav x-data="{ demoNav: false, toggleDemoNav() { this.demoNav = ! this.demoNav } }"
-                             class="relative py-4 px-20 mb-6 bg-dark text-light dark:bg-darkAccent">
+                             class="relative py-4 px-20 mb-6 text-dark dark:text-darkAccent border-b border-dark dark:border-darkAccent">
                             <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
-                                <a class="text-xl text-light dark:text-dark" href="#">
+                                <a class="text-xl text-dark dark:text-darkAccent" href="#">
                                     Dark
                                 </a>
                                 <button x-on:click="toggleDemoNav()"
-                                        class="md:hidden navbar-toggler text-light border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                                        class="md:hidden navbar-toggler text-dark dark:text-darkAccent border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent"
                                         type="button">
                                     <svg focusable="false" data-prefix="fas" data-icon="bars"
                                          class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -225,23 +225,23 @@
                                 <div :class="demoNav ? '' : 'hidden md:inline'" class="grow w-screen md:w-auto">
                                     <div class="flex flex-col items-center md:flex-row md:space-x-4">
                                         <ul class="grow flex flex-col md:flex-row justify-end md:justify-start pl-0 list-style-none">
-                                            <li class="nav-item p-3 backdrop-brightness-125">
-                                                <a class="nav-link text-light dark:text-dark backdrop-opacity-5" href="#">
+                                            <li class="nav-item p-3">
+                                                <a class="nav-link text-dark dark:text-darkAccent" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-light dark:text-dark" href="#">
+                                                <a class="nav-link text-dark dark:text-darkAccent" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-light dark:text-dark" href="#">
+                                                <a class="nav-link text-dark dark:text-darkAccent" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-light dark:text-dark" href="#">
+                                                <a class="nav-link text-dark dark:text-darkAccent" href="#">
                                                     Link
                                                 </a>
                                             </li>
@@ -250,13 +250,11 @@
                                             <div class="relative">
                                                 <input type="text"
                                                        name="search"
-                                                       class="focus:ring-brand focus:border-brand w-full pl-4 pr-8 py-2 sm:text-sm border-light rounded-md"
+                                                       class="bg-transparent w-full pl-4 pr-8 py-2 text-dark dark:text-darkAccent border-b border-dark dark:border-darkAccent rounded-md"
                                                        placeholder="Search...">
                                                 <div class="absolute inset-y-0 right-0 flex items-center">
-                                                    <button class="text-dark pr-1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                                        </svg>
+                                                    <button class="text-dark dark:text-darkAccent pr-1">
+                                                        -->
                                                     </button>
                                                 </div>
                                             </div>
@@ -268,13 +266,13 @@
                     </div>
                     <div class="mt-3">
                         <nav x-data="{ demoNav2: false, toggleDemoNav2() { this.demoNav2 = ! this.demoNav2 } }"
-                             class="relative py-4 px-20 mb-6 bg-lightAccent dark:bg-light text-dark">
+                             class="relative py-4 px-20 mb-6 text-lightAccent dark:text-light border-b border-lightAccent dark:border-light">
                             <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
-                                <a class="text-xl text-dark" href="#">
+                                <a class="text-xl text-lightAccent dark:text-light" href="#">
                                     Light
                                 </a>
                                 <button x-on:click="toggleDemoNav2()"
-                                        class="md:hidden navbar-toggler text-dark border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                                        class="md:hidden navbar-toggler text-lightAccent dark:text-light border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent"
                                         type="button">
                                     <svg focusable="false" data-prefix="fas" data-icon="bars"
                                          class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -287,23 +285,23 @@
                                 <div :class="demoNav2 ? '' : 'hidden md:inline'" class="grow w-screen md:w-auto">
                                     <div class="flex flex-col items-center md:flex-row md:space-x-4">
                                         <ul class="grow flex flex-col md:flex-row justify-end md:justify-start pl-0 list-style-none">
-                                            <li class="nav-item p-3 backdrop-brightness-105">
-                                                <a class="nav-link text-dark backdrop-opacity-5" href="#">
+                                            <li class="nav-item p-3">
+                                                <a class="nav-link text-lightAccent dark:text-light" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-dark" href="#">
+                                                <a class="nav-link text-lightAccent dark:text-light" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-dark" href="#">
+                                                <a class="nav-link text-lightAccent dark:text-light" href="#">
                                                     Link
                                                 </a>
                                             </li>
                                             <li class="nav-item p-3">
-                                                <a class="nav-link text-dark" href="#">
+                                                <a class="nav-link text-lightAccent dark:text-light" href="#">
                                                     Link
                                                 </a>
                                             </li>
@@ -312,13 +310,11 @@
                                             <div class="relative">
                                                 <input type="text"
                                                        name="search"
-                                                       class="focus:ring-brand focus:border-brand w-full pl-4 pr-8 py-2 sm:text-sm rounded-md border border-lightAccent dark:border-dark"
+                                                       class="bg-transparent w-full pl-4 pr-8 py-2 rounded-md border-b border-lightAccent dark:border-light"
                                                        placeholder="Search...">
                                                 <div class="absolute inset-y-0 right-0 flex items-center">
-                                                    <button class="text-dark pr-1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                                        </svg>
+                                                    <button class="text-lightAccent dark:text-light pr-1">
+                                                        -->
                                                     </button>
                                                 </div>
                                             </div>
@@ -464,53 +460,70 @@
                                         <div class="grid grid-cols-6 gap-6">
                                             <div class="col-span-6 sm:col-span-3">
                                                 <div class="flex items-end">
-                                                    <label for="first-name" class="mr-2 block text-base font-medium text-dark dark:text-light">First name:</label>
+                                                    <label for="first-name" class="mr-2 text-base font-medium text-dark dark:text-light">First name:</label>
                                                     <input type="text"
                                                            name="first-name"
                                                            id="first-name"
                                                            autocomplete="given-name"
-                                                           style="caret-shape:block"
-                                                           class="grow caret-block text-dark dark:text-light dark:bg-dark focus:ring-0 focus:border-dark sm:text-sm border-b border-dark dark:border-light rounded-md">
+                                                           class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
                                                 </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3">
-                                                <label for="last-name" class="block text-sm font-medium text-dark dark:text-light">Last name</label>
-                                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="last-name" class="mr-2 text-base font-medium text-dark dark:bg-dark dark:text-light">Last name:</label>
+                                                    <input type="text"
+                                                           name="last-name"
+                                                           id="last-name"
+                                                           autocomplete="family-name"
+                                                           class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-4">
-                                                <label for="email-address" class="block text-sm font-medium text-dark dark:text-light">Email address</label>
-                                                <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="email-address" class="mr-2 text-base font-medium text-dark dark:text-light">Email address</label>
+                                                    <input type="text" name="email-address" id="email-address" autocomplete="email" class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3">
-                                                <label for="country" class="block text-sm font-medium text-dark dark:text-light">Country</label>
-                                                <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 text-dark border border-dark rounded-md focus:outline-none focus:ring-dark focus:border-dark sm:text-sm">
-                                                    <option>United States</option>
-                                                    <option>Canada</option>
-                                                    <option>Mexico</option>
-                                                </select>
+                                                <div class="flex items-end">
+                                                    <label for="country" class="mr-2 text-base font-medium text-dark dark:text-light">Country</label>
+                                                    <select id="country" name="country" autocomplete="country-name" class="grow text-dark dark:text-brand border-b border-dark dark:border-light rounded-md dark:bg-dark text-base">
+                                                        <option>United States</option>
+                                                        <option>Canada</option>
+                                                        <option>Mexico</option>
+                                                    </select>
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6">
-                                                <label for="street-address" class="block text-sm font-medium text-dark dark:text-light">Street address</label>
-                                                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="street-address" class="mr-2 text-base font-medium text-dark dark:text-light">Street address</label>
+                                                    <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                                                <label for="city" class="block text-sm font-medium text-dark dark:text-light">City</label>
-                                                <input type="text" name="city" id="city" autocomplete="address-level2" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="city" class="mr-2 text-base font-medium text-dark dark:text-light">City</label>
+                                                    <input type="text" name="city" id="city" autocomplete="address-level2" class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                                <label for="region" class="block text-sm font-medium  text-dark dark:text-light">State / Province</label>
-                                                <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="region" class="mr-2 text-base font-medium  text-dark dark:text-light">State / Province</label>
+                                                    <input type="text" name="region" id="region" autocomplete="address-level1" class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                                <label for="postal-code" class="block text-sm font-medium text-dark dark:text-light">ZIP / Postal code</label>
-                                                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 p-2 text-dark focus:ring-dark focus:border-dark block w-full shadow-sm sm:text-sm border border-dark rounded-md">
+                                                <div class="flex items-end">
+                                                    <label for="postal-code" class="mr-2 text-base font-medium text-dark dark:text-light">ZIP / Postal code</label>
+                                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="grow text-dark dark:text-brand dark:caret-brand dark:bg-dark text-base border-b border-dark dark:border-light rounded-md">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="my-4">
@@ -519,29 +532,29 @@
                                                 <div class="mt-4 space-y-4">
                                                     <div class="flex items-start">
                                                         <div class="flex items-center h-5">
-                                                            <input id="comments" name="comments" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
+                                                            <input id="comments" name="comments" type="checkbox" class="h-4 w-4 text-dark border border-dark rounded">
                                                         </div>
-                                                        <div class="ml-3 text-sm">
+                                                        <div class="ml-3 leading-4">
                                                             <label for="comments" class="font-medium text-dark dark:text-light">Comments</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when someones posts a comment on a posting.</p>
+                                                            <p class="text-sm text-lightAccent dark:text-darkAccent">Get notified when someones posts a comment on a posting.</p>
                                                         </div>
                                                     </div>
                                                     <div class="flex items-start">
                                                         <div class="flex items-center h-5">
                                                             <input id="candidates" name="candidates" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
                                                         </div>
-                                                        <div class="ml-3 text-sm">
+                                                        <div class="ml-3 leading-4">
                                                             <label for="candidates" class="font-medium text-dark dark:text-light">Candidates</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when a candidate applies for a job.</p>
+                                                            <p class="text-sm text-lightAccent dark:text-darkAccent">Get notified when a candidate applies for a job.</p>
                                                         </div>
                                                     </div>
                                                     <div class="flex items-start">
                                                         <div class="flex items-center h-5">
-                                                            <input id="offers" name="offers" type="checkbox" class="focus:ring-dark h-4 w-4 text-dark border border-dark rounded">
+                                                            <input id="offers" name="offers" type="checkbox" class="h-4 w-4 text-dark border border-dark rounded">
                                                         </div>
-                                                        <div class="ml-3 text-sm">
+                                                        <div class="ml-3 leading-4">
                                                             <label for="offers" class="font-medium text-dark dark:text-light">Offers</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when a candidate accepts or rejects an offer.</p>
+                                                            <p class="text-sm text-lightAccent dark:text-darkAccent">Get notified when a candidate accepts or rejects an offer.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -556,15 +569,15 @@
                                                 <div class="mt-4 space-y-4">
                                                     <div class="flex items-center">
                                                         <input id="push-everything" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
-                                                        <label for="push-everything" class="ml-3 block text-sm font-medium text-dark dark:text-light"> Everything </label>
+                                                        <label for="push-everything" class="ml-3 block font-medium text-dark dark:text-light"> Everything </label>
                                                     </div>
                                                     <div class="flex items-center">
                                                         <input id="push-email" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
-                                                        <label for="push-email" class="ml-3 block text-sm font-medium text-dark dark:text-light"> Same as email </label>
+                                                        <label for="push-email" class="ml-3 block font-medium text-dark dark:text-light"> Same as email </label>
                                                     </div>
                                                     <div class="flex items-center">
                                                         <input id="push-nothing" name="push-notifications" type="radio" class="focus:ring-dark h-4 w-4 text-dark border border-dark">
-                                                        <label for="push-nothing" class="ml-3 block text-sm font-medium text-dark dark:text-light"> No push notifications </label>
+                                                        <label for="push-nothing" class="ml-3 block font-medium text-dark dark:text-light"> No push notifications </label>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -588,15 +601,15 @@
                                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                                     <div class="overflow-hidden border border-brand sm:rounded-lg">
                                         <table class="min-w-full divide-y divide-brand">
-                                            <thead class="bg-brand">
+                                            <thead class="bg-light dark:bg-dark">
                                             <tr>
-                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Name</th>
-                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Title</th>
-                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Status</th>
-                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Role</th>
+                                                <th scope="col" class="px-6 py-3 text-left font-medium text-brand uppercase tracking-wider">Name</th>
+                                                <th scope="col" class="px-6 py-3 text-left font-medium text-brand uppercase tracking-wider">Title</th>
+                                                <th scope="col" class="px-6 py-3 text-left font-medium text-brand uppercase tracking-wider">Status</th>
+                                                <th scope="col" class="px-6 py-3 text-left font-medium text-brand uppercase tracking-wider">Role</th>
                                             </tr>
                                             </thead>
-                                            <tbody class="divide-y divide-lightAccent dark:divide-darkAccent">
+                                            <tbody class="divide-y divide-brand">
                                             <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
@@ -611,7 +624,7 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Active</td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Admin</td>
                                             </tr>
-                                            <tr class="bg-lightAccent dark:bg-darkAccent">
+                                            <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
                                                         <div class="ml-4">
@@ -639,7 +652,7 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Active</td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Admin</td>
                                             </tr>
-                                            <tr class="bg-lightAccent dark:bg-darkAccent">
+                                            <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
                                                         <div class="ml-4">
@@ -670,33 +683,33 @@
                     </h2>
                     <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="flex justify-center">
-                            <div class="block p-6 rounded-lg shadow-lg bg-dark dark:bg-darkAccent max-w-sm">
-                                <h5 class="text-light text-xl leading-tight font-medium mb-2">Card title</h5>
-                                <p class="text-light text-base mb-4">
+                            <div class="block p-6 rounded-lg border border-dark dark:border-darkAccent max-w-sm">
+                                <h5 class="text-dark dark:text-darkAccent text-xl leading-tight font-medium mb-2">Card title</h5>
+                                <p class="text-dark dark:text-light text-base mb-4">
                                     Some quick example text to build on the card title and make up the bulk of the card's
                                     content.
                                 </p>
-                                <button type="button" class=" inline-block px-6 py-2.5 bg-light dark:bg-dark text-dark dark:text-light font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
+                                <button type="button" class="inline-block px-6 py-2.5 border border-dark dark:border-darkAccent text-dark dark:text-darkAccent font-medium text-sm leading-tight uppercase rounded shadow-md">Button</button>
                             </div>
                         </div>
                         <div class="flex justify-center">
-                            <div class="block p-6 rounded-lg shadow-lg bg-lightAccent dark:bg-light max-w-sm">
-                                <h5 class="text-light dark:text-dark text-xl leading-tight font-medium mb-2">Card title</h5>
-                                <p class="text-light dark:text-dark text-base mb-4">
+                            <div class="block p-6 rounded-lg border border-lightAccent dark:border-light max-w-sm">
+                                <h5 class="text-lightAccent dark:text-light text-xl leading-tight font-medium mb-2">Card title</h5>
+                                <p class="text-lightAccent dark:text-light text-base mb-4">
                                     Some quick example text to build on the card title and make up the bulk of the card's
                                     content.
                                 </p>
-                                <button type="button" class=" inline-block px-6 py-2.5 bg-brand text-light font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
+                                <button type="button" class=" inline-block px-6 py-2.5 border text-lightAccent dark:text-light font-medium text-sm leading-tight uppercase rounded">Button</button>
                             </div>
                         </div>
                         <div class="flex justify-center">
-                            <div class="block p-6 rounded-lg shadow-lg bg-brand max-w-sm">
-                                <h5 class="text-light text-xl leading-tight font-medium mb-2">Card title</h5>
-                                <p class="text-light text-base mb-4">
+                            <div class="block p-6 rounded-lg border border-brand max-w-sm">
+                                <h5 class="text-brand text-xl leading-tight font-medium mb-2">Card title</h5>
+                                <p class="text-dark dark:text-light text-base mb-4">
                                     Some quick example text to build on the card title and make up the bulk of the card's
                                     content.
                                 </p>
-                                <button type="button" class=" inline-block px-6 py-2.5 bg-light dark:bg-dark text-dark dark:text-light font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
+                                <button type="button" class=" inline-block px-6 py-2.5 border border-brand text-brand font-medium text-sm leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
                             </div>
                         </div>
                     </div>
