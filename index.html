@@ -27,10 +27,10 @@
 
             <!-- NAVIGATION START -->
             <nav x-data="{ openNav: false, toggleNav() { this.openNav = ! this.openNav } }"
-                 class="relative w-full py-4 px-20 mb-6 bg-brand text-dark dark:text-light">
+                 class="relative w-full py-4 px-20 mb-6 bg-lightAccent dark:bg-darkAccent text-dark dark:text-light">
                 <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
                     <a class="text-xl text-light dark:text-dark" href="#">
-                        Navbar
+                        Jedi
                     </a>
                     <button x-on:click="toggleNav()"
                             class="md:hidden navbar-toggler text-light dark:text-dark border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
@@ -99,14 +99,12 @@
             <div class="container mx-auto">
 
                 <!-- HERO START -->
-                <div class="bg-light dark:bg-dark shadow-lg dark:shadow-light border dark:border-light rounded-lg flex place-content-center px-36 py-28">
-                    <div class="flex-col text-center">
-                        <h5 class="uppercase font-semibold text-brand py-2">Hello World</h5>
-                        <h1 class="text-5xl font-bold text-dark dark:text-light">Template Name</h1>
-                        <p class="text-lg text-lightAccent dark:text-darkAccent py-3">
-                            Quick description of the template.
-                            <br/>
-                            What it seeks to mimic and how to get it.
+                <div class="stars shadow-lg dark:shadow-light border dark:border-light rounded-lg flex place-content-center px-36 py-28">
+                    <div class="flex-col text-center skew-text">
+                        <h5 class="uppercase font-semibold text-xl text-lightAccent dark:text-darkAccent py-2 text-shadow">Hello World</h5>
+                        <h1 class="text-6xl font-bold text-brand text-shadow">Jedi Theme</h1>
+                        <p class="text-xl text-lightAccent dark:text-darkAccent py-3 text-shadow">
+                            A long time ago in a galaxy far, far away...
                         </p>
                     </div>
                 </div>
@@ -148,7 +146,7 @@
                     </h2>
                     <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
-                            <h5 class="uppercase font-semibold text-brand py-2">Headings</h5>
+                            <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Headings</h5>
                             <h1 class="leading-tight text-6xl text-dark dark:text-light">H1 Heading</h1>
                             <h2 class="leading-tight text-5xl text-dark dark:text-light">H2 Heading</h2>
                             <h3 class="leading-tight text-4xl text-dark dark:text-light">H3 Heading</h3>
@@ -157,7 +155,7 @@
                             <h6 class="leading-tight text-xl text-dark dark:text-light">H6 Heading</h6>
                         </div>
                         <div>
-                            <h5 class="uppercase font-semibold text-brand py-2">Font Weights</h5>
+                            <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Font Weights</h5>
                             <div class="space-y-4">
                                 <p class="text-dark dark:text-light font-black">Black Weight: 900</p>
                                 <p class="text-dark dark:text-light font-extrabold">Extra Bold Weight: 800</p>
@@ -172,7 +170,7 @@
                         </div>
                         <div>
                             <div>
-                                <h5 class="uppercase font-semibold text-brand py-2">Blockquote</h5>
+                                <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Blockquote</h5>
                                 <figure>
                                     <blockquote>
                                         <p class="text-xl text-dark dark:text-light">
@@ -185,7 +183,7 @@
                                 </figure>
                             </div>
                             <div class="mt-3">
-                                <h5 class="uppercase font-semibold text-brand py-2">Paragraph</h5>
+                                <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Paragraph</h5>
                                 <p class="text-base text-dark dark:text-light">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -268,7 +266,7 @@
                     </div>
                     <div class="mt-3">
                         <nav x-data="{ demoNav2: false, toggleDemoNav2() { this.demoNav2 = ! this.demoNav2 } }"
-                             class="relative py-4 px-20 mb-6 bg-lightAccent dark:bg-light text-dark">
+                             class="relative py-4 px-20 mb-6 bg-brand dark:bg-light text-dark">
                             <div class="flex flex-wrap justify-between md:justify-start items-center md:space-x-6">
                                 <a class="text-xl text-dark" href="#">
                                     Light
@@ -312,7 +310,7 @@
                                             <div class="relative">
                                                 <input type="text"
                                                        name="search"
-                                                       class="focus:ring-brand focus:border-brand w-full pl-4 pr-8 py-2 sm:text-sm rounded-md border border-lightAccent dark:border-dark"
+                                                       class="focus:ring-brand focus:border-brand w-full pl-4 pr-8 py-2 sm:text-sm rounded-md border border-brand dark:border-dark"
                                                        placeholder="Search...">
                                                 <div class="absolute inset-y-0 right-0 flex items-center">
                                                     <button class="text-dark pr-1">
@@ -331,19 +329,19 @@
                     <div class="mt-3">
                         <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
-                                <h5 class="uppercase font-semibold text-brand py-2">Breadcrumbs</h5>
+                                <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Breadcrumbs</h5>
                                 <nav class="rounded-md w-full">
                                     <ol class="list-reset flex">
-                                        <li><a href="#" class="text-brand">Home</a></li>
+                                        <li><a href="#" class="text-lightAccent dark:text-darkAccent">Home</a></li>
                                         <li><span class="text-dark dark:text-light mx-2">/</span></li>
-                                        <li><a href="#" class="text-brand">Link</a></li>
+                                        <li><a href="#" class="text-lightAccent dark:text-darkAccent">Link</a></li>
                                         <li><span class="text-dark dark:text-light mx-2">/</span></li>
                                         <li class="text-dark dark:text-light">Link</li>
                                     </ol>
                                 </nav>
                             </div>
                             <div>
-                                <h5 class="uppercase font-semibold text-brand py-2">Pagination</h5>
+                                <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Pagination</h5>
                                 <div class="flex">
                                     <nav aria-label="Page navigation example">
                                         <ul class="flex list-style-none">
@@ -354,7 +352,7 @@
                                                 class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-dark dark:text-light focus:shadow-none"
                                                 href="#">1</a></li>
                                             <li class="page-item active"><a
-                                                class="page-link relative block py-1.5 px-3 rounded border-0 bg-brand outline-none transition-all duration-300 rounded text-light dark:text-dark shadow-md focus:shadow-md"
+                                                class="page-link relative block py-1.5 px-3 rounded border-0 bg-lightAccent dark:bg-darkAccent outline-none transition-all duration-300 rounded text-light dark:text-dark shadow-md focus:shadow-md"
                                                 href="#">2</a></li>
                                             <li class="page-item"><a
                                                 class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-dark dark:text-light focus:shadow-none"
@@ -367,12 +365,12 @@
                                 </div>
                             </div>
                             <div>
-                                <h5 class="uppercase font-semibold text-brand py-2">Tabs</h5>
+                                <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Tabs</h5>
                                 <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
                                     role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <a href="#tabs-home"
-                                           class="nav-link block font-medium text-xs leading-tight uppercase text-brand border-b-2 border-brand px-6 py-3 my-2"
+                                           class="nav-link block font-medium text-xs leading-tight uppercase  text-lightAccent dark:text-darkAccent border-b-2 border-lightAccent dark:border-darkAccent px-6 py-3 my-2"
                                            id="tabs-home-tab"
                                            data-bs-toggle="pill"
                                            data-bs-target="#tabs-home"
@@ -516,7 +514,7 @@
                                                         </div>
                                                         <div class="ml-3 text-sm">
                                                             <label for="comments" class="font-medium text-dark dark:text-light">Comments</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when someones posts a comment on a posting.</p>
+                                                            <p class="text-brand">Get notified when someones posts a comment on a posting.</p>
                                                         </div>
                                                     </div>
                                                     <div class="flex items-start">
@@ -525,7 +523,7 @@
                                                         </div>
                                                         <div class="ml-3 text-sm">
                                                             <label for="candidates" class="font-medium text-dark dark:text-light">Candidates</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when a candidate applies for a job.</p>
+                                                            <p class="text-brand">Get notified when a candidate applies for a job.</p>
                                                         </div>
                                                     </div>
                                                     <div class="flex items-start">
@@ -534,7 +532,7 @@
                                                         </div>
                                                         <div class="ml-3 text-sm">
                                                             <label for="offers" class="font-medium text-dark dark:text-light">Offers</label>
-                                                            <p class="text-lightAccent dark:text-darkAccent">Get notified when a candidate accepts or rejects an offer.</p>
+                                                            <p class="text-brand">Get notified when a candidate accepts or rejects an offer.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -544,7 +542,7 @@
                                             <fieldset>
                                                 <div>
                                                     <legend class="text-base font-medium text-dark dark:text-light">Push Notifications</legend>
-                                                    <p class="text-sm text-light dark:text-darkAccent">These are delivered via SMS to your mobile phone.</p>
+                                                    <p class="text-sm text-brand">These are delivered via SMS to your mobile phone.</p>
                                                 </div>
                                                 <div class="mt-4 space-y-4">
                                                     <div class="flex items-center">
@@ -579,9 +577,9 @@
                         <div class="flex flex-col">
                             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                                    <div class="overflow-hidden border border-brand sm:rounded-lg">
-                                        <table class="min-w-full divide-y divide-brand">
-                                            <thead class="bg-brand">
+                                    <div class="overflow-hidden border border-lightAccent dark:border-darkAccent sm:rounded-lg">
+                                        <table class="min-w-full divide-y divide-lightAccent dark:divide-darkAccent">
+                                            <thead class="bg-lightAccent dark:bg-darkAccent">
                                             <tr>
                                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Name</th>
                                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Title</th>
@@ -589,7 +587,7 @@
                                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-light uppercase tracking-wider">Role</th>
                                             </tr>
                                             </thead>
-                                            <tbody class="divide-y divide-lightAccent dark:divide-darkAccent">
+                                            <tbody class="divide-y divide-lightAccent/30 dark:divide-darkAccent/30">
                                             <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
@@ -604,7 +602,7 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Active</td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Admin</td>
                                             </tr>
-                                            <tr class="bg-lightAccent dark:bg-darkAccent">
+                                            <tr class="bg-lightAccent/30 dark:bg-darkAccent/30">
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
                                                         <div class="ml-4">
@@ -632,7 +630,7 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Active</td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-dark dark:text-light">Admin</td>
                                             </tr>
-                                            <tr class="bg-lightAccent dark:bg-darkAccent">
+                                            <tr class="bg-lightAccent/30 dark:bg-darkAccent/30">
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     <div class="flex items-center">
                                                         <div class="ml-4">
@@ -679,7 +677,7 @@
                                     Some quick example text to build on the card title and make up the bulk of the card's
                                     content.
                                 </p>
-                                <button type="button" class=" inline-block px-6 py-2.5 bg-brand text-light font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
+                                <button type="button" class=" inline-block px-6 py-2.5 bg-light dark:bg-lightAccent text-dark dark:text-light font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Button</button>
                             </div>
                         </div>
                         <div class="flex justify-center">
@@ -703,7 +701,7 @@
                     </h2>
                     <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
-                            <h5 class="uppercase font-semibold text-brand py-2">List Groups</h5>
+                            <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">List Groups</h5>
                             <div class="flex justify-center">
                                 <ul class="rounded-lg border border-lightAccent dark:border-darkAccent w-96 text-dark dark:text-light">
                                     <li class="px-6 py-2 border-b border-lightAccent dark:border-darkAccent w-full rounded-t-lg">An item</li>
@@ -715,7 +713,7 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="uppercase font-semibold text-brand py-2"></h5>
+                            <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2"></h5>
                             <div class="flex justify-center">
                                 <ul class="rounded-lg w-96 text-dark dark:text-light">
                                     <li class="px-6 py-2 border-b border-lightAccent dark:border-darkAccent w-full rounded-t-lg">An item</li>
@@ -727,7 +725,7 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="uppercase font-semibold text-brand py-2">Accordions</h5>
+                            <h5 class="uppercase font-semibold text-lightAccent dark:text-darkAccent py-2">Accordions</h5>
                             <div class="accordion" id="accordionExample"  x-data="{ accordion: 1 }">
                                 <div class="accordion-item rounded-t-lg border border-lightAccent dark:border-darkAccent">
                                     <h2 class="accordion-header mb-0" id="headingOne">
